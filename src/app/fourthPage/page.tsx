@@ -61,19 +61,19 @@ export default function Fourth() {
       {/* for lines and numbering */}
       <div className="flex justify-center items-center px-10">
         {/* Number 01 */}
-        <div className="flex justify-center items-center w-96 hidden lg:flex">
+        <div className=" justify-center items-center w-96 hidden lg:flex">
           <span className="text-3xl font-semibold">01</span>
           <div className="border-t-2 border-gray-500 flex-1 mx-2"></div>
         </div>
 
         {/* Number 02 */}
-        <div className="flex justify-center items-center w-96 hidden lg:flex">
+        <div className=" justify-center items-center w-96 hidden lg:flex">
           <span className="text-3xl font-semibold">02</span>
           <div className="border-t-2 border-gray-500 flex-1 mx-2"></div>
         </div>
 
         {/* Number 03 */}
-        <div className="flex justify-center items-center w-auto hidden lg:flex">
+        <div className=" justify-center items-center w-auto hidden lg:flex">
           <span className="text-3xl font-semibold">03</span>
         </div>
       </div>

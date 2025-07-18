@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Donate() {
   return (
-    <section className="bg-[#FF5349] py-16 px-6 md:px-20">
+    <section className="bg-[#FF5349] py-16 px-6 md:px-20 mt-20">
       <div className="flex flex-col md:flex-row items-center justify-between">
         {/* Left Side: Text Content */}
         <div className="text-white w-full md:w-1/2 mb-10 md:mb-0">

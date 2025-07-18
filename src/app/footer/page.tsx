@@ -35,23 +35,42 @@ const Footer = () => {
                 </div>
             </div>
 
-            {/* Right Side Images */}
+            {/* Right Side Images
             <div className="footerRight w-full lg:w-1/2 flex justify-end lg:justify-end mt-4 items-end">
                 <Image
                     src="/footer1.png"
                     alt="Illustration of MyBindle community"
                     width={300}
                     height={300}
-                    className="w-[250px] sm:w-[300px] lg:w-[350px] object-contain"
+                    className=" w-[250px] sm:w-[300px] lg:w-[350px] object-contain"
                 />
                 <Image
                     src="/footer2.png"
                     alt="Illustration of MyBindle features"
                     width={300}
                     height={300}
-                    className="w-[250px] sm:w-[300px] lg:w-[350px] object-contain mt-4"
+                    className=" w-[250px] sm:w-[300px] lg:w-[350px] object-contain mt-4"
                 />
-            </div>
+            </div> */}
+
+            {/* Right Side Images */}
+<div className="footerRight w-full lg:w-1/2 flex justify-end lg:justify-end mt-4 items-end relative md:mt-12">
+  <Image
+    src="/footer1.png"
+    alt="Illustration of MyBindle community"
+    width={300}
+    height={300}
+    className="w-[250px] sm:w-[300px] lg:w-[350px] object-contain bottom-0"
+  />
+  <Image
+    src="/footer2.png"
+    alt="Illustration of MyBindle features"
+    width={300}
+    height={300}
+    className="w-[250px] sm:w-[300px] lg:w-[350px] object-containmt-4 bottom-0"
+  />
+</div>
+
         </footer>
     );
 };

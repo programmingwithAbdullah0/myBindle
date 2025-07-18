@@ -92,8 +92,12 @@ function TestimonialBoxes() {
                   <span key={i} aria-label="star">⭐</span>
                 ))}
               </div>
+              <div className="mt-3-">
+                <p>{item.feedback}</p>
 
-              <div className="flex items-center">
+              </div>
+
+              <div className="flex items-center mt-3">
                 <Image
                   src={item.userimage}
                   alt={`Profile image of ${item.name}`}
