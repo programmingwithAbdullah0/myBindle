@@ -1,152 +1,67 @@
-// import Image from "next/image";
+'use client'
+import Image from 'next/image'
+import React from 'react'
+import { AboutCardData } from '../thirdPage/pageData'
 
-// function Third() {
-//   return (
-//     <>
-//     <div className="mt-40">
-//       <div className="flex items-center justify-between px-10 py-16">
-//         {/* Left Side: Image */}
-//         <div className="w-1/2">
-//        <div className="relative bg-[#FF5349] rounded-full w-auto h-auto flex items-center justify-center">
-//             <Image
-//               src="/firstMobile.png"
-//               alt="Mobile 1"
-//               width={350}
-//               height={350}
-//               className="absolute left-1 z-0"
-//             />
-//             <Image
-//               src="/secondMobile.png"
-//               alt="Mobile 2"
-//               width={350}
-//               height={350}
-//               className="absolute right-16 z-10"
-//             />
-//           </div>
-//         </div>
-
-//         {/* Right Side: Text */}
-//         <div className="w-1/2 pl-10">
-//           <h1 className="text-5xl font-extrabold mb-4">Where Every Click  <br/>Sparks a Connection!
-//           </h1>
-//           <p className="text-xl">
-//             A small act of kindness today can create a lifetime of impact for someone in need. Give from the heart and change a life!
-//           </p>
-// {/* for boxes */}
-// {/* 1st box */}
-// <div className="border-2 border-white rounded-lg w-97 p-6 transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-gray-500">
-//     <h1 className="font-semibold text-2xl hover:text-red-900 mb-4">
-//         🎥 Short Videos & Reels
-//     </h1>
-//     <p>
-//        Share engaging, bite-sized content that keeps everyone entertained..
-//     </p>
-// </div>
-
-// {/* 2nd box */}
-// <div className="border-2 border-white rounded-md w-97 p-6 transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-gray-500 mt-1">
-//     <h1 className="font-semibold text-2xl hover:text-red-900 mb-4">
-//        🔔 Smart Notifications
-//     </h1>
-//     <p>
-//         Stay updated on what matters without the noise.
-//     </p>
-// </div>
-
-// {/* 3rd box */}
-// <div className="border-2 border-white rounded-md w-97 p-6 transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-gray-500 mt-1">
-//     <h1 className="font-semibold text-2xl hover:text-red-900 mb-4">
-//     👥 Interest-Based Communities
-//     </h1>
-//     <p>
-//        Join groups and discussions that match your passion
-//     </p>
-// </div>
-
-
-
-
-//         </div>
-//       </div>
-//       </div>
-//     </>
-//   );
-// }
-
-// export default Third;
-
-
-import Image from "next/image";
-
-function Third() {
+const About = () => {
   return (
-    <>
-      <div className="mt-40">
-        <div className="flex flex-col md:flex-row items-center justify-center px-6 py-16">
-          {/* Left Side: Image */}
-          <div className="w-full md:w-1/2 mb-10 md:mb-0 flex justify-center md:justify-center">
-            <div className="relative bg-[#FF5349] rounded-full w-auto h-auto flex items-center justify-center mx-auto">
-              <Image
-                src="/firstMobile.png"
-                alt="Mobile 1"
-                width={350}
-                height={350}
-                className="absolute left-[-100] z-0"
-              />
-              <Image
-                src="/secondMobile.png"
-                alt="Mobile 2"
-                width={350}
-                height={350}
-                className=" right-60 z-10"
-              />
-            </div>
-          </div>
+    <section className="relative mt-[10%] pb-10 flex flex-col lg:flex-row justify-between items-center overflow-hidden" aria-label="About Section" id='About'>
+      <div className="container mt-10 mx-auto flex flex-col lg:flex-row items-center justify-center max-w-7xl px-4">
+        <div className="relative w-full lg:w-[600px] flex justify-center items-center mb-10 lg:mb-0 lg:mr-10">
+          {/* Background circle with reduced size for mobile */}
+          <div className="absolute w-[250px] h-[250px] md:w-[350px] md:h-[350px] lg:w-[500px] lg:h-[500px] bg-[#FF5349] rounded-full z-0"></div>
 
-          {/* Right Side: Text */}
-          <div className="w-full md:w-1/2 pl-10 text-center md:text-left">
-            <h1 className="text-3xl md:text-5xl font-extrabold mb-4">
-              Where Every Click <br /> Sparks a Connection!
-            </h1>
-            <p className="text-base md:text-lg mb-6">
-              A small act of kindness today can create a lifetime of impact for
-              someone in need. Give from the heart and change a life!
-            </p>
-
-            {/* Boxes */}
-            <div className="space-y-4">
-              {/* 1st box */}
-              <div className="border-2 border-white rounded-lg w-full md:w-97 p-6 transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-gray-500">
-                <h1 className="font-semibold text-2xl hover:text-red-900 mb-4">
-                  🎥 Short Videos & Reels
-                </h1>
-                <p>
-                  Share engaging, bite-sized content that keeps everyone
-                  entertained..
-                </p>
-              </div>
-
-              {/* 2nd box */}
-              <div className="border-2 border-white rounded-md w-full md:w-97 p-6 transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-gray-500 mt-1">
-                <h1 className="font-semibold text-2xl hover:text-red-900 mb-4">
-                  🔔 Smart Notifications
-                </h1>
-                <p>Stay updated on what matters without the noise.</p>
-              </div>
-
-              {/* 3rd box */}
-              <div className="border-2 border-white rounded-md w-full md:w-97 p-6 transform transition-all hover:scale-105 hover:shadow-2xl hover:shadow-gray-500 mt-1">
-                <h1 className="font-semibold text-2xl hover:text-red-900 mb-4">
-                  👥 Interest-Based Communities
-                </h1>
-                <p>Join groups and discussions that match your passion</p>
-              </div>
-            </div>
-          </div>
+          {/* First Image */}
+          <Image
+            src={"/firstMobile.png"}
+            alt="Connection image 1"
+            width={300}
+            height={300}
+            className="relative z-10 w-[65%] md:w-[30%] lg:w-[400px] -left-16 md:-left-[8%] lg:-left-28 lg:-top-10"
+          />
+          
+          {/* Second Image */}
+          <Image
+            src={"/secondMobile.png"}
+            alt="Connection image 2"
+            width={300}
+            height={300}
+            className="absolute z-20 -top-10 left-[70%] md:left-[60%] lg:left-[70%] translate-x-[-50%] w-[75%] md:w-[35%] lg:w-[450px]"
+          />
         </div>
       </div>
-    </>
-  );
+
+      {/* Right Side: Text */}
+      <div className="rightConnectionImage px-4 sm:px-6 lg:pr-[8%] text-center lg:text-left">
+        <h1 className='md:text-4xl lg:text-4xl xl:text-5xl pb-4 font-extrabold leading-tight text-[#282722] md:mt-10'>
+          Where Every Click Sparks a Connection!
+        </h1>
+        <p className="text-lg md:text-xl font-light leading-8 text-[#525252] mb-6">
+          A small act of kindness today can create a lifetime of impact for someone in need. Give from the heart and change a life!
+        </p>
+
+        {/* Boxes */}
+        <div className="space-y-6 p-6 overflow-hidden w-[100%] justify-center">
+          {AboutCardData.map((item, idx) => (
+            <div
+              key={idx}
+              className="AboutCard p-6 rounded-2xl border border-gray-200 shadow-sm transform transition-all duration-500 ease-in-out hover:scale-[1.02] hover:shadow-[0_8px_30px_rgba(0,0,0,0.15)] hover:border-transparent group relative overflow-hidden"
+            >
+              {/* Hover effect background */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-[#FF5349]/10 via-white/0 to-[#FF5349]/10 opacity-0 group-hover:opacity-100 transition-all duration-500 rounded-3xl blur-[2px] pointer-events-none" />
+              
+              <h2 className="text-2xl font-semibold text-[#1A293C] mb-2 group-hover:text-[#FF5349] transition-colors duration-300">
+                {item.title}
+              </h2>
+              <p className="text-gray-700 text-base transition-colors duration-300 group-hover:text-[#333]">
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
 }
 
-export default Third;
+export default About
