@@ -25,7 +25,7 @@ const Home = () => {
             </p>
 
             {/* Call to action button (now a simple link) */}
-            <Link href={""}>
+            <Link href={"/thirdPage"}>
               <p className="bg-white text-[#FF5349] font-semibold px-6 py-3 rounded hover:bg-gray-200 transition mt-6 inline-block">
                 Get Started
               </p>
